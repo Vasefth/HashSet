@@ -21,3 +21,5 @@ public class Main {
 	}
 
 }
+
+//for more details on how it is used go see my main and bankaccount files
