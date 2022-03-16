@@ -1,20 +1,22 @@
-import java.util.*;
+import java.util.HashSet;
+
 
 public class Main {
 
-	
 	public static void main(String[] args) {
 		
-		HashSet<String> set = new HashSet<String>();
+		BankAccount BA1 = new BankAccount(1500, "001");
+		BankAccount BA2 = new BankAccount(1500, "001");
 		
-		set.add("John");
-		set.add("Mary");
-		set.add("Helen");
-		set.add("John");
+		HashSet<BankAccount> hashSet = new HashSet<BankAccount>();
 		
-		for(String name: set)
-			System.out.println(name);
+		hashSet.add(BA1);
+		hashSet.add(BA2);
 		
+		for(BankAccount account: hashSet)
+			System.out.println(account.getCode() + ", " 
+					           + account.getBalance()); 
+
 	}
 
 }
