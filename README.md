@@ -1,5 +1,5 @@
 # HashSet
-How HashSet works
+How HashSet works, an example:
 
 import java.util.*;
 
